@@ -196,11 +196,11 @@ header{
     align-self: flex-start;
 }
 .about-container{
-    display: block;
-    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 55% 40%;
+    grid-column-gap: 5%;
+    margin-top: 5rem;
     .about-content{
-        float: left;
-        width: 55%;
         .about-title{
             text-transform: uppercase;
             font-size: 28px;
@@ -269,11 +269,15 @@ header{
         }
     }
     .about-image{
-        float: right;
-        width: 40%;
+        background-color: #6bcaea;
+        border-radius: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         img{
-            width: 100%;
-            height: auto;
+            max-width:90%;
+            max-height:100%;
+            
         }
     }
 }

@@ -212,12 +212,10 @@ header {
 }
 
 .about-container {
-  display: block;
-  margin-top: 10%;
-}
-.about-container .about-content {
-  float: left;
-  width: 55%;
+  display: grid;
+  grid-template-columns: 55% 40%;
+  grid-column-gap: 5%;
+  margin-top: 5rem;
 }
 .about-container .about-content .about-title {
   text-transform: uppercase;
@@ -284,12 +282,15 @@ header {
   color: white;
 }
 .about-container .about-image {
-  float: right;
-  width: 40%;
+  background-color: #6bcaea;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about-container .about-image img {
-  width: 100%;
-  height: auto;
+  max-width: 90%;
+  max-height: 100%;
 }
 
 .uust {
